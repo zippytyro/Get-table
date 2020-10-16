@@ -3,31 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="one.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get table</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Multiplication tables</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="contaniner-fluid">
-        <div class="jumbotron">
-            <h1>Get Table</h1>
+    <div class="contaniner-fluid mt-5 mb-4">
+        <div>
+            <img src="https://img.icons8.com/wired/64/000000/multiply.png"/>
+            <h1 class="head p-4">Get Multiplication Tables Of Any Number !!</h1>
+            <h5>Making multiplication easy !!</h5>
+            <img src="https://img.icons8.com/wired/64/000000/multiply.png"/>
+            
         </div>
-        <form>
+        
+
+        <form class="p-5 form-inline d-flex justify-content-center">
             <div class="form-group">
-                <label for="number">Enter Number</label>
-                <input required autocomplete="off" type="number" class="form-control" id="number">
+                <label for="number">Enter Number: </label>
+                <input required autocomplete="off" type="number" class="form-control ml-3" id="number">
             </div>
         </form>
-        <button class="btn btn-secondary" id="get">Get Table</button>
+        <button class="btn btn-secondary mt-3" id="get">Click to get Answer</button>
     </div>
-    <br>
+
     <div id="tables">
     </div>
+    
     <script src="app.js"></script>
+    <footer id="footer" class="card">
+        &copy; All rights reserved
+    </footer>
 </body>
 
 </html>
